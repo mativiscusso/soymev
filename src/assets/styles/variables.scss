@@ -1,0 +1,17 @@
+@import url('../fonts/Montserrat/Montserrat-Regular.ttf');
+@import url('../fonts/Montserrat/Montserrat-Bold.ttf');
+@import url('../fonts/RobotoMono/RobotoMono-Regular.ttf');
+
+$montserrat: 'Montserrat Regular', sans-serif;
+$montserratBold: 'Montserrat Bold', sans-serif;
+$robotoRegular: 'Roboto Mono', monospace;
+$green: #48FF22;
+$lightBlue: #00E3FF;
+$black: #2A2530;
+$white: #FFF;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,36 @@
+.card-portfolio {
+    width: 230px;
+    height: 330px;
+    border-radius: 20px;
+    .card-portfolio-footer {
+        position: absolute;
+        width: 230px;
+        height: 330px;
+        left: 73.13px;
+        top: 470.56px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 0px 0px 20px 20px;
+        h3 {
+            font-family: $montserratBold;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        h4 {
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 12px;
+        }
+        a {
+            font-family: $montserratBold;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 12px;
+            line-height: 15px;
+            color: $lightBlue;
+        }
+    }
+}
