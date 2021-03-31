@@ -1,10 +1,19 @@
-@import url('../fonts/Montserrat/Montserrat-Regular.ttf');
-@import url('../fonts/Montserrat/Montserrat-Bold.ttf');
-@import url('../fonts/RobotoMono/RobotoMono-Regular.ttf');
+@font-face{ 
+    font-family: 'Montserrat', sans-serif;
+    src: local('../fonts/Montserrat/Montserrat-Regular.ttf');
+};
+@font-face{ 
+    font-family: 'Montserrat Bold', sans-serif;
+    src: local('../fonts/Montserrat/Montserrat-Bold.ttf');
+};
+@font-face{ 
+    font-family: 'Roboto Mono', monospace;
+    src: local('../fonts/RobotoMono/RobotoMono-Regular.ttf');
+};
 
-$montserrat: 'Montserrat Regular', sans-serif;
-$montserratBold: 'Montserrat Bold', sans-serif;
-$robotoRegular: 'Roboto Mono', monospace;
+$montserrat: 'Montserrat';
+$montserratBold: 'Montserrat Bold';
+$robotoRegular: 'Roboto Mono';
 $green: #48FF22;
 $lightBlue: #00E3FF;
 $black: #2A2530;
@@ -14,4 +23,7 @@ $white: #FFF;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body {
+    background-color: $black;
 }
