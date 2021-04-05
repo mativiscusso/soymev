@@ -1,5 +1,25 @@
 #about {
     .about-img {
+        margin-bottom: 25px;
+    }
+    padding-bottom: 70px;
+    font-family: $montserrat;
+    color: $white;
+    .title {
+        color: $lightBlue;
+        text-transform: uppercase;
+    }
+    .skills {
+        margin-top: 25px;
+        .subtitle {
+            text-transform: uppercase;
+            color: $green;
+        }
+        .brands {
+            padding: 5px 0 10px 0;
+        }
+    }
+    .about-img {
         img {width: 100%;}
     }
 }
