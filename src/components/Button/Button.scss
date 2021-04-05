@@ -1,12 +1,11 @@
 .btn-primary {
-    border-color: 3px solid $green;
+    border: 2px solid $green;
     width: 182px;
     height: 46px;
     border-radius: 15px;
     color: $green;
     font-family: $robotoRegular;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 24px;
+    background-color: transparent;
 }

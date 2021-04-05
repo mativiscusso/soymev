@@ -1,5 +1,4 @@
 import React from 'react';
-import './CardPortfolio.scss'
 
 const CardPortfolio = ({title, url}) => {
     return (

@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    .navbar-links {
+        display: none;
+        li a {
+            text-transform: uppercase;
+
+        }
+    }
+}

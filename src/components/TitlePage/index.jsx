@@ -1,5 +1,4 @@
 import React from 'react';
-import './TitlePage.scss'
 
 const TitlePage = ({title}) => {
     return (

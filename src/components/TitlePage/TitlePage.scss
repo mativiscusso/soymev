@@ -1,11 +1,13 @@
 .title-page {
     position: absolute;
-    bottom: -2px;
-    right: -2px;
-    font-family: $montserratBold;
+    bottom: -15px;
+    right: 0px;
+    font-family: $montserrat;
     font-style: normal;
     font-weight: 900;
     font-size: 64px;
     line-height: 78px;
-    border: 4px solid #ffffff;
+    color: $black;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #fff;
 }

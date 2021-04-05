@@ -1,13 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import logoMev from '../../assets/svg/Logo-MEV.svg'
+import iconMenu from '../../assets/svg/Hamburg-icon.svg'
+import MenuMobile from '../MenuMobile'
 
 const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <img src="" alt="Logo MEV"/>
+                <img src={logoMev} alt="Logo MEV"/>
             </div>
-            <div className="navbar-icon-hamburg"></div>
+            <div className="navbar-icon-hamburg">
+            <MenuMobile right/>
+            </div>
             <div className="navbar-links">
                 <ul>
                     <li><Link to="/">home</Link></li>
