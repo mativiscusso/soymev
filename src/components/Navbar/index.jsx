@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import logoMev from '../../assets/svg/Logo-MEV.svg'
-import iconMenu from '../../assets/svg/Hamburg-icon.svg'
 import MenuMobile from '../MenuMobile'
 
 const Navbar = () => {

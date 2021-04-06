@@ -4,6 +4,7 @@ import TitlePage from "../components/TitlePage";
 import CardPortfolio from "../components/CardPortfolio";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useSpring, animated } from "react-spring";
 import portfolio from "../utils/portfolio";
 // Import Swiper styles
 import "swiper/swiper.scss";
@@ -15,23 +16,31 @@ import "swiper/components/scrollbar/scrollbar.scss";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Portfolio = () => {
+    const animation = useSpring({ opacity: 1, from: { opacity: 0 } });
+
     return (
         <Layout>
-            <section id="portfolio">
-                <Swiper
-                    navigation
-                    pagination={{ clickable: true }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log("slide change")}
-                >
-                    {portfolio.map((job) => (
-                        <SwiperSlide className="card-portfolio">
-                            <CardPortfolio title={job.name} url={job.url} image={job.image}/>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-                <TitlePage title="portfolio" />
-            </section>
+            <animated.div style={animation}>
+                <section id="portfolio">
+                    <Swiper
+                        navigation
+                        pagination={{ clickable: true }}
+                        onSwiper={(swiper) => console.log(swiper)}
+                        onSlideChange={() => console.log("slide change")}
+                    >
+                        {portfolio.map((job) => (
+                            <SwiperSlide className="card-portfolio">
+                                <CardPortfolio
+                                    title={job.name}
+                                    url={job.url}
+                                    image={job.image}
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                    <TitlePage title="portfolio" />
+                </section>
+            </animated.div>
         </Layout>
     );
 };
