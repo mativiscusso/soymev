@@ -1,15 +1,39 @@
-import React from 'react';
-import Layout from '../layout/Layout'
-import TitlePage from '../components/TitlePage'
+import React from "react";
+import Layout from "../layout/Layout";
+import TitlePage from "../components/TitlePage";
+import CardPortfolio from "../components/CardPortfolio";
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import portfolio from "../utils/portfolio";
+// Import Swiper styles
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import "swiper/components/scrollbar/scrollbar.scss";
+
+// install Swiper modules
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Portfolio = () => {
     return (
         <Layout>
-            Portfolio
-            <TitlePage title="portfolio"/>
-
+            <section id="portfolio">
+                <Swiper
+                    navigation
+                    pagination={{ clickable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log("slide change")}
+                >
+                    {portfolio.map((job) => (
+                        <SwiperSlide className="card-portfolio">
+                            <CardPortfolio title={job.name} url={job.url} image={job.image}/>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <TitlePage title="portfolio" />
+            </section>
         </Layout>
     );
-}
+};
 
 export default Portfolio;

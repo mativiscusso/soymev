@@ -1,0 +1,21 @@
+#contact {
+    padding: 1rem 2rem 2rem 2rem;
+    .info-contact {
+        padding-top: 2rem;
+        .item-info-contact {
+            display: flex;
+            align-items: center;
+            padding: 5px 0;
+            a {
+                font-family: $robotoRegular;
+                font-size: 12px;
+                color: $white;
+                text-decoration: none;
+                margin-left: 5px;
+            }
+        }
+    }
+    .title-page {
+        position: fixed;
+    }
+}

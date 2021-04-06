@@ -1,36 +1,46 @@
 .card-portfolio {
-    width: 230px;
+    position: relative;
+    text-transform: uppercase;
+    width: 230px!important;
+    margin-right: 15px;
     height: 330px;
     border-radius: 20px;
+    transition: all .1s ease-in;
+    &:hover {
+        .card-portfolio-image {
+            filter: saturate(1);
+        }
+    }
+    .card-portfolio-image {
+        width: 230px!important;
+        margin-right: 15px;
+        height: 330px;
+        border-radius: 20px;
+    }
     .card-portfolio-footer {
         position: absolute;
         width: 230px;
-        height: 330px;
-        left: 73.13px;
-        top: 470.56px;
-        background: rgba(255, 255, 255, 0.8);
-        border-radius: 0px 0px 20px 20px;
-        h3 {
-            font-family: $montserratBold;
-            font-style: normal;
-            font-weight: 900;
-            font-size: 12px;
-            line-height: 15px;
-        }
-        h4 {
+        height: 70px;
+        bottom: 0px;
+        background: #00e1ffd7;
+        border-radius: 0px 20px 20px 20px;
+        padding: 10px 16px;
+        font-family: $montserrat;
+        h5 {
             font-family: $montserrat;
             font-style: normal;
-            font-weight: normal;
-            font-size: 10px;
-            line-height: 12px;
+            font-weight: 900;
+            line-height: 15px;
         }
         a {
-            font-family: $montserratBold;
+            font-family: $robotoRegular;
             font-style: normal;
             font-weight: 900;
             font-size: 12px;
             line-height: 15px;
-            color: $lightBlue;
+            color: $black;
+            text-decoration: none;
         }
     }
 }
+

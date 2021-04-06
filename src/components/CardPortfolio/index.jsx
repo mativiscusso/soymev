@@ -1,11 +1,12 @@
 import React from 'react';
 
-const CardPortfolio = ({title, url}) => {
+const CardPortfolio = ({title, url, image}) => {
+    const urlImage = `http://localhost:3000/assets/img/${image}`
     return (
-        <div className="card-portfolio">
+        <div>
+            <img className="card-portfolio-image" src={urlImage} alt="portfolio"/>
             <div className="card-portfolio-footer">
-                <h3>{title}</h3>
-                <h4>{url}</h4>
+                <h5>{title}</h5>
                 <a href={url} target="_blank" rel="noopener noreferrer">VISITAR SITIO ▶</a>
             </div>
         </div>
