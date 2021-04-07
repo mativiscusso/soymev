@@ -1,14 +1,14 @@
 @font-face{ 
-    font-family: 'Montserrat', sans-serif;
-    src: local('../fonts/Montserrat/Montserrat-Regular.ttf');
+    font-family: 'Nunito', sans-serif;
+    src: local('../fonts/Nunito/Nunito-Regular.ttf');
 };
 @font-face{ 
     font-family: 'Roboto Mono', monospace;
     src: local('../fonts/RobotoMono/RobotoMono-Regular.ttf');
 };
 
-$montserrat: 'Montserrat', sans-serif;
-$robotoRegular: 'Roboto Mono', monospace;
+$primaryFont: 'Nunito', sans-serif;;
+$secondaryFont: 'Roboto Mono', monospace;
 $green: #48FF22;
 $lightBlue: #00E3FF;
 $black: #2A2530;
