@@ -1,14 +1,13 @@
-/* nunito-regular - latin */
+@font-face{ 
+    font-family: 'Roboto Mono', monospace;
+    src: local('../fonts/RobotoMono/RobotoMono-Regular.ttf') format('truetype');
+};
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     src: local('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'), 
   }
-@font-face{ 
-    font-family: 'Roboto Mono', monospace;
-    src: local('../fonts/RobotoMono/RobotoMono-Regular.ttf') format('truetype');
-};
 
 $primaryFont: 'Montserrat', sans-serif;
 $secondaryFont: 'Roboto Mono', monospace;
