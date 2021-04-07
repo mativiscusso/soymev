@@ -1,19 +1,16 @@
 /* nunito-regular - latin */
 @font-face {
-    font-family: 'Nunito';
+    font-family: 'Montserrat regular';
     font-style: normal;
     font-weight: 400;
-    src: local('../fonts/Nunito/nunito-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         local('../fonts/Nunito/nunito-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
-         local('../fonts/Nunito/nunito-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         local('../fonts/Nunito/nunito-v16-latin-regular.svg') format('svg'); /* Legacy iOS */
+    src: local('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype'), 
   }
 @font-face{ 
     font-family: 'Roboto Mono', monospace;
     src: local('../fonts/RobotoMono/RobotoMono-Regular.ttf') format('truetype');
 };
 
-$primaryFont: 'Roboto Mono', monospace;
+$primaryFont: 'Montserrat regular', sans-serif;
 $secondaryFont: 'Roboto Mono', monospace;
 $green: #48FF22;
 $lightBlue: #00E3FF;
