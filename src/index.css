@@ -3,7 +3,7 @@
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/nunito-v16-latin-regular.eot");
+  src: url("../fonts/Nunito/nunito-v16-latin-regular.eot");
   /* IE9 Compat Modes */
   src: local(""), url("../fonts/Nunito/nunito-v16-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Nunito/nunito-v16-latin-regular.woff2") format("woff2"), url("../fonts/Nunito/nunito-v16-latin-regular.woff") format("woff"), url("../fonts/Nunito/nunito-v16-latin-regular.ttf") format("truetype"), url("../fonts/Nunito/nunito-v16-latin-regular.svg#Nunito") format("svg");
   /* Legacy iOS */
