@@ -1,6 +1,6 @@
 /* nunito-regular - latin */
 @font-face {
-  font-family: 'Montserrat regular';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   src: local("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
@@ -73,11 +73,11 @@ body {
   background: #00e1ffd7;
   border-radius: 0px 20px 20px 20px;
   padding: 10px 16px;
-  font-family: "Montserrat regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card-portfolio .card-portfolio-footer h5 {
-  font-family: "Montserrat regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 900;
   line-height: 15px;
@@ -97,7 +97,7 @@ body {
   position: absolute;
   bottom: -15px;
   right: 0px;
-  font-family: "Montserrat regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 64px;
@@ -128,7 +128,7 @@ body {
 /* Individual item */
 .bm-item {
   display: inline-block;
-  font-family: "Montserrat regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 2rem;
@@ -215,7 +215,7 @@ body {
 }
 
 #form-contact .form-control label {
-  font-family: "Montserrat regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   color: #00E3FF;
   font-size: 18px;
@@ -266,7 +266,7 @@ body {
 #home .home-text h1 {
   margin: 5px 0;
   color: #00E3FF;
-  font-family: "Montserrat regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
 }
 
@@ -280,7 +280,7 @@ body {
 
 #about {
   padding: 20px 15px 70px 15px;
-  font-family: "Montserrat regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #FFF;
 }
 
