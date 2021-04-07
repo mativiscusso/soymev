@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CardPortfolio = ({title, url, image}) => {
-    const urlImage = `http://localhost:3000/assets/img/${image}`
+    const urlImage = `${process.env.REACT_APP_URL}/assets/img/${image}`
     return (
         <div>
             <img className="card-portfolio-image" src={urlImage} alt="portfolio"/>

@@ -3,16 +3,11 @@
     src: local('../fonts/Montserrat/Montserrat-Regular.ttf');
 };
 @font-face{ 
-    font-family: 'Montserrat Bold', sans-serif;
-    src: local('../fonts/Montserrat/Montserrat-Bold.ttf');
-};
-@font-face{ 
     font-family: 'Roboto Mono', monospace;
     src: local('../fonts/RobotoMono/RobotoMono-Regular.ttf');
 };
 
 $montserrat: 'Montserrat';
-$montserratBold: 'Montserrat Bold';
 $robotoRegular: 'Roboto Mono', monospace;
 $green: #48FF22;
 $lightBlue: #00E3FF;
