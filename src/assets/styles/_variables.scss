@@ -3,13 +3,13 @@
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/Nunito/nunito-v16-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('../fonts/Nunito/nunito-v16-latin-regular.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('../fonts/Nunito/nunito-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Nunito/nunito-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('../fonts/Nunito/nunito-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/Nunito/nunito-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/Nunito/nunito-v16-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+         local('../fonts/Nunito/nunito-v16-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         local('../fonts/Nunito/nunito-v16-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         local('../fonts/Nunito/nunito-v16-latin-regular.woff') format('woff'), /* Modern Browsers */
+         local('../fonts/Nunito/nunito-v16-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         local('../fonts/Nunito/nunito-v16-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
   }
 @font-face{ 
     font-family: 'Roboto Mono', monospace;
