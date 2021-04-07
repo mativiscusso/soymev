@@ -3,9 +3,7 @@
   font-family: 'Nunito';
   font-style: normal;
   font-weight: 400;
-  src: local("../fonts/Nunito/nunito-v16-latin-regular.eot");
-  /* IE9 Compat Modes */
-  src: local(""), local("../fonts/Nunito/nunito-v16-latin-regular.eot?#iefix") format("embedded-opentype"), local("../fonts/Nunito/nunito-v16-latin-regular.woff2") format("woff2"), local("../fonts/Nunito/nunito-v16-latin-regular.woff") format("woff"), local("../fonts/Nunito/nunito-v16-latin-regular.ttf") format("truetype"), local("../fonts/Nunito/nunito-v16-latin-regular.svg#Nunito") format("svg");
+  src: local("../fonts/Nunito/nunito-v16-latin-regular.woff2") format("woff2"), local("../fonts/Nunito/nunito-v16-latin-regular.woff") format("woff"), local("../fonts/Nunito/nunito-v16-latin-regular.ttf") format("truetype"), local("../fonts/Nunito/nunito-v16-latin-regular.svg") format("svg");
   /* Legacy iOS */
 }
 
@@ -76,11 +74,11 @@ body {
   background: #00e1ffd7;
   border-radius: 0px 20px 20px 20px;
   padding: 10px 16px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 .card-portfolio .card-portfolio-footer h5 {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-style: normal;
   font-weight: 900;
   line-height: 15px;
@@ -100,7 +98,7 @@ body {
   position: absolute;
   bottom: -15px;
   right: 0px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-style: normal;
   font-weight: 900;
   font-size: 64px;
@@ -131,7 +129,7 @@ body {
 /* Individual item */
 .bm-item {
   display: inline-block;
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 2rem;
@@ -218,7 +216,7 @@ body {
 }
 
 #form-contact .form-control label {
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-weight: 800;
   color: #00E3FF;
   font-size: 18px;
@@ -269,7 +267,7 @@ body {
 #home .home-text h1 {
   margin: 5px 0;
   color: #00E3FF;
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Mono", monospace;
   font-size: 2rem;
 }
 
@@ -283,7 +281,7 @@ body {
 
 #about {
   padding: 20px 5px 5px 70px;
-  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Mono", monospace;
   color: #FFF;
 }
 
