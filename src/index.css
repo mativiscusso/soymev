@@ -215,15 +215,16 @@ body {
   font-family: "Nunito", sans-serif;
   font-weight: 800;
   color: #00E3FF;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
 #form-contact .form-control input, #form-contact .form-control textarea {
   background-color: transparent;
   border: 0;
-  border-bottom: 2px solid #48FF22;
-  font-size: 16px;
+  border-radius: 0;
+  border-bottom: 1px solid #FFF;
+  font-size: 14px;
   color: #FFF;
   font-family: "Roboto Mono", monospace;
   padding: 5px 0;
@@ -275,7 +276,7 @@ body {
 }
 
 #about {
-  padding-bottom: 70px;
+  padding: 70px 15px 15px 70px;
   font-family: "Nunito", sans-serif;
   color: #FFF;
 }
@@ -312,7 +313,7 @@ body {
 
 #portfolio .swiper-container {
   height: 440px;
-  padding-top: 60px;
+  padding-top: 70px;
 }
 
 #contact {
