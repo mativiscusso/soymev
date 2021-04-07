@@ -1,0 +1,348 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: local("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Montserrat Bold', sans-serif;
+  src: local("../fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'Roboto Mono', monospace;
+  src: local("../fonts/RobotoMono/RobotoMono-Regular.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #2A2530;
+}
+
+#layout-page {
+  position: relative;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.btn-primary {
+  border: 2px solid #48FF22;
+  width: 182px;
+  height: 46px;
+  border-radius: 15px;
+  color: #48FF22;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: transparent;
+}
+
+.card-portfolio {
+  position: relative;
+  text-transform: uppercase;
+  width: 230px !important;
+  margin-right: 15px;
+  height: 330px;
+  border-radius: 20px;
+  -webkit-transition: all .1s ease-in;
+  transition: all .1s ease-in;
+}
+
+.card-portfolio:hover .card-portfolio-image {
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
+}
+
+.card-portfolio .card-portfolio-image {
+  width: 230px !important;
+  margin-right: 15px;
+  height: 330px;
+  border-radius: 20px;
+}
+
+.card-portfolio .card-portfolio-footer {
+  position: absolute;
+  width: 230px;
+  height: 70px;
+  bottom: 0px;
+  background: #00e1ffd7;
+  border-radius: 0px 20px 20px 20px;
+  padding: 10px 16px;
+  font-family: "Montserrat";
+}
+
+.card-portfolio .card-portfolio-footer h5 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  line-height: 15px;
+}
+
+.card-portfolio .card-portfolio-footer a {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 15px;
+  color: #2A2530;
+  text-decoration: none;
+}
+
+.title-page {
+  position: absolute;
+  bottom: -15px;
+  right: 0px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 78px;
+  color: #2A2530;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #fff;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+.navbar .navbar-links {
+  display: none;
+}
+
+.navbar .navbar-links li a {
+  text-transform: uppercase;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 2rem;
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 25px;
+  color: #2A2530;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.bm-item:first-child {
+  margin-top: 70px;
+}
+
+/* Change color on hover */
+.bm-item:hover {
+  color: white;
+}
+
+/* The rest copied directly from react-burger-menu docs */
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  width: 36px;
+  height: 30px;
+}
+
+.bm-menu-wrap {
+  position: fixed;
+  top: 0;
+  height: 80%;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #FFF;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 34px;
+  width: 34px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #2A2530;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #00E3FF;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  border-radius: 0 0 0 3rem;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #FFF;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #ffffff6b;
+  height: 300px !important;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#form-contact .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px 0;
+}
+
+#form-contact .form-control label {
+  font-family: "Montserrat";
+  font-weight: 800;
+  color: #00E3FF;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+#form-contact .form-control input, #form-contact .form-control textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px solid #48FF22;
+  font-size: 16px;
+  color: #FFF;
+  font-family: "Roboto Mono", monospace;
+  padding: 5px 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+#form-contact .form-control input:focus, #form-contact .form-control textarea:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+  border-bottom: 2px solid #00E3FF;
+}
+
+#home {
+  padding: 2rem;
+  height: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#home .home-image {
+  text-align: center;
+}
+
+#home .home-text {
+  color: #FFF;
+  font-family: "Roboto Mono", monospace;
+}
+
+#home .home-text h1 {
+  margin: 5px 0;
+  color: #00E3FF;
+  font-family: "Montserrat";
+  font-size: 2rem;
+}
+
+#home .home-text h3 {
+  font-size: 1.5rem;
+}
+
+#home .home-text h4 {
+  font-size: 1.2rem;
+}
+
+#about {
+  padding-bottom: 70px;
+  font-family: "Montserrat";
+  color: #FFF;
+}
+
+#about .about-img {
+  margin-bottom: 25px;
+}
+
+#about .title {
+  color: #00E3FF;
+  text-transform: uppercase;
+}
+
+#about .skills {
+  margin-top: 25px;
+}
+
+#about .skills .subtitle {
+  text-transform: uppercase;
+  color: #48FF22;
+}
+
+#about .skills .brands {
+  padding: 5px 0 10px 0;
+}
+
+#about .about-img img {
+  width: 100%;
+}
+
+#portfolio .title-page {
+  position: fixed;
+}
+
+#portfolio .swiper-container {
+  height: 440px;
+  padding-top: 60px;
+}
+
+#contact {
+  padding: 1rem 2rem 5rem 2rem;
+}
+
+#contact .info-contact {
+  padding-top: 2rem;
+}
+
+#contact .info-contact .item-info-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+}
+
+#contact .info-contact .item-info-contact a {
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  color: #FFF;
+  text-decoration: none;
+  margin-left: 5px;
+}
+/*# sourceMappingURL=index.css.map */
