@@ -25,8 +25,21 @@ const Portfolio = () => {
                     <Swiper
                         navigation
                         pagination={{ clickable: true }}
-                        onSwiper={(swiper) => console.log(swiper)}
-                        onSlideChange={() => console.log("slide change")}
+                        spaceBetween={1}
+                        breakpoints={{
+                            375: {
+                             width: 320,
+                             slidesPerView: 1   
+                            },
+                            768: {
+                             width: 768,
+                             slidesPerView: 3   
+                            },
+                            1024: {
+                             width: 1024,
+                             slidesPerView: 4   
+                            },
+                        }}
                     >
                         {portfolio.map((job) => (
                             <SwiperSlide className="card-portfolio">

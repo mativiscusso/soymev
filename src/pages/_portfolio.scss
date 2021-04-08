@@ -3,20 +3,54 @@
         position: fixed;
     }
     .swiper-container {
+        width: 370px;
         height: 440px;
         padding-top: 70px;
     }
 }
+  
 @media all and (min-width: 424px) and (max-width: 767px) { 
-
+    #portfolio {
+        .swiper-container {
+            width: 424px;
+          }
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
-     
-}
-@media all and (min-width: 1024px) {
+    #portfolio {
+        .swiper-container {
+            padding-top: 20%;
+            height: 640px;
+            width: 768px;
+          }    
+          .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+            bottom: 75px;
+        }  
+    }
 
 }
+@media all and (min-width: 1024px) {
+    #portfolio {
+        margin-bottom: 5%;
+        .swiper-container {
+            padding-top: 30px;
+            width: 1010px;
+          }   
+          .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+            bottom: 35px;
+        } 
+    }
+}
 @media all and (min-width: 1390px) {
-  
+    #portfolio {
+        .swiper-container {
+            padding-top: 8%;
+            height: 640px;
+            width: 1520px;
+          } 
+          .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+              bottom: 75px;
+          }   
+    }
 }

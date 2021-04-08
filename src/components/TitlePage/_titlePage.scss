@@ -5,9 +5,14 @@
     font-family: $primaryFont;
     font-style: normal;
     font-weight: 900;
-    font-size: 15vw;
+    font-size: 10vw;
     line-height: 78px;
     color: $black;
     -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: #fff;
+}
+@media all and (min-width: 1024px) {
+    .title-page {
+        bottom: 30px;
+    }
 }

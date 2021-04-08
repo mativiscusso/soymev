@@ -291,27 +291,20 @@ body {
 .card-portfolio {
   position: relative;
   text-transform: uppercase;
-  width: 230px !important;
-  margin-right: 15px;
-  height: 330px;
-  border-radius: 20px;
-  -webkit-transition: all .1s ease-in;
-  transition: all .1s ease-in;
-}
-
-.card-portfolio:hover .card-portfolio-image {
-  -webkit-filter: saturate(1);
-          filter: saturate(1);
-}
-
-.card-portfolio .card-portfolio-image {
-  width: 230px !important;
-  margin-right: 15px;
   height: 330px;
   border-radius: 20px;
 }
 
-.card-portfolio .card-portfolio-footer {
+.card-portfolio-image {
+  height: 330px;
+  border-radius: 20px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.card-portfolio-footer {
   position: absolute;
   width: 230px;
   height: 70px;
@@ -322,14 +315,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.card-portfolio .card-portfolio-footer h5 {
+.card-portfolio-footer h5 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 900;
   line-height: 15px;
 }
 
-.card-portfolio .card-portfolio-footer a {
+.card-portfolio-footer a {
   font-family: "Roboto Mono", monospace;
   font-style: normal;
   font-weight: 900;
@@ -339,6 +332,46 @@ body {
   text-decoration: none;
 }
 
+@media all and (min-width: 1024px) {
+  .card-portfolio .card-portfolio-footer {
+    opacity: 0;
+  }
+  .card-portfolio:hover .card-portfolio-image {
+    -webkit-transition: all 300ms ease-in;
+    transition: all 300ms ease-in;
+    -webkit-filter: none;
+            filter: none;
+  }
+  .card-portfolio:hover .card-portfolio-footer {
+    -webkit-animation: slide-in-bottom 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-bottom 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+  @-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(10px);
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}
+
 .title-page {
   position: absolute;
   bottom: -15px;
@@ -346,11 +379,17 @@ body {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 15vw;
+  font-size: 10vw;
   line-height: 78px;
   color: #2A2530;
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: #fff;
+}
+
+@media all and (min-width: 1024px) {
+  .title-page {
+    bottom: 30px;
+  }
 }
 
 .navbar {
@@ -705,8 +744,50 @@ body {
 }
 
 #portfolio .swiper-container {
+  width: 370px;
   height: 440px;
   padding-top: 70px;
+}
+
+@media all and (min-width: 424px) and (max-width: 767px) {
+  #portfolio .swiper-container {
+    width: 424px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  #portfolio .swiper-container {
+    padding-top: 20%;
+    height: 640px;
+    width: 768px;
+  }
+  #portfolio .swiper-pagination-fraction, #portfolio .swiper-pagination-custom, #portfolio .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 75px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  #portfolio {
+    margin-bottom: 5%;
+  }
+  #portfolio .swiper-container {
+    padding-top: 30px;
+    width: 1010px;
+  }
+  #portfolio .swiper-pagination-fraction, #portfolio .swiper-pagination-custom, #portfolio .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 35px;
+  }
+}
+
+@media all and (min-width: 1390px) {
+  #portfolio .swiper-container {
+    padding-top: 8%;
+    height: 640px;
+    width: 1520px;
+  }
+  #portfolio .swiper-pagination-fraction, #portfolio .swiper-pagination-custom, #portfolio .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 75px;
+  }
 }
 
 #contact {
