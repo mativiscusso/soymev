@@ -16,6 +16,7 @@ body {
 
 #layout-page {
   position: relative;
+  padding-top: 1rem;
 }
 
 .img-fluid {
@@ -113,8 +114,46 @@ body {
   display: none;
 }
 
-.navbar .navbar-links li a {
-  text-transform: uppercase;
+@media all and (min-width: 1024px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  .navbar .navbar-icon-hamburg {
+    display: none;
+  }
+  .navbar .navbar-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar .navbar-links ul {
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar .navbar-links ul li {
+    list-style: none;
+  }
+  .navbar .navbar-links ul li a {
+    color: #00E3FF;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+  }
+}
+
+@media all and (min-width: 1300px) {
+  .navbar {
+    padding: 1rem 6rem;
+  }
 }
 
 /* Individual item */
@@ -259,15 +298,71 @@ body {
   margin: 5px 0;
   color: #00E3FF;
   font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
+  font-size: 8vw;
 }
 
 #home .home-text h3 {
-  font-size: 1.5rem;
+  font-size: 6vw;
 }
 
 #home .home-text h4 {
-  font-size: 1.2rem;
+  font-size: 5vw;
+}
+
+@media all and (min-width: 424px) and (max-width: 767px) {
+  #home .home-image {
+    padding-top: 3rem;
+  }
+  #home .home-image img {
+    width: 350px !important;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  #home {
+    padding-top: 50%;
+  }
+  #home .home-image {
+    padding: 3rem;
+  }
+  #home .home-image img {
+    width: 80% !important;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  #home {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 3rem;
+  }
+  #home .home-text {
+    padding-right: 5rem;
+    width: 50%;
+  }
+  #home .home-text h1 {
+    font-size: 3.5vw;
+  }
+  #home .home-text h3 {
+    font-size: 2.5vw;
+  }
+  #home .home-text h4 {
+    font-size: 2vw;
+  }
+  #home .home-image {
+    width: 35% !important;
+  }
+}
+
+@media all and (min-width: 1390px) {
+  #home {
+    padding-top: 15%;
+  }
 }
 
 #about {

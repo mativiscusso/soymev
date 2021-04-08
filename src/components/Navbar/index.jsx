@@ -10,7 +10,7 @@ const Navbar = () => {
                 <img src={logoMev} alt="Logo MEV"/>
             </div>
             <div className="navbar-icon-hamburg">
-            <MenuMobile right/>
+            <MenuMobile right />
             </div>
             <div className="navbar-links">
                 <ul>

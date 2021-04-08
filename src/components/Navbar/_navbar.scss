@@ -4,9 +4,37 @@
     padding: 1rem;
     .navbar-links {
         display: none;
-        li a {
-            text-transform: uppercase;
-
+    }
+}
+@media all and (min-width: 1024px) {
+    .navbar {
+        padding: 1rem 2rem;
+        .navbar-icon-hamburg {
+            display: none;
         }
+        .navbar-links {
+            display: flex;
+            ul {
+                width: 500px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li {
+                    list-style: none;
+                    a {
+                        color: $lightBlue;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-family: $primaryFont;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (min-width: 1300px) { 
+    .navbar {
+        padding: 1rem 6rem;
     }
 }

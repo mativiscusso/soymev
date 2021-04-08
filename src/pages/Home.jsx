@@ -25,11 +25,11 @@ const Home = () => {
                             Desarrollador full stack & diseñador apasionado del
                             front-end.
                         </h4>
-                    </div>
                     <br />
-                    <Link to="/contact">
+                    <Link to="/contact" className="home-btn">
                         <Button text="CHARLEMOS" />
                     </Link>
+                    </div>
                 </section>
             </animated.div>
         </Layout>
