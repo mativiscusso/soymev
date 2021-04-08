@@ -2,11 +2,12 @@ import React from "react";
 import Layout from "../layout/Layout";
 import TitlePage from "../components/TitlePage";
 import FormContact from "../components/FormContact";
-import logoEmail from "../assets/svg/email.svg";
-import logoLinkdin from "../assets/svg/linkedin.svg";
-import logoCV from "../assets/svg/cv.svg";
-import logoGithub from "../assets/svg/github.svg";
-import logoCel from "../assets/svg/celular.svg";
+import logoEmail from "../assets/svg/email.png";
+import logoLinkdin from "../assets/svg/linkedin.png";
+import logoCV from "../assets/svg/cv.png";
+import logoGithub from "../assets/svg/github.png";
+import logoCel from "../assets/svg/celular.png";
+import contactGraphic from "../assets/svg/graphicContact.svg";
 import { useSpring, animated } from "react-spring";
 
 const Contact = () => {
@@ -18,6 +19,13 @@ const Contact = () => {
                 <section id="contact">
                     <FormContact />
                     <div className="info-contact">
+                        <div className="info-contact-graphic">
+                            <img
+                                src={contactGraphic}
+                                alt="graphic contact"
+                                className="img-fluid"
+                            />
+                        </div>
                         <div className="item-info-contact">
                             <img src={logoLinkdin} alt="linkedin" />
                             <a
@@ -65,12 +73,12 @@ const Contact = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                Curriculum Vitae
+                                Descargar <strong>Curriculum Vitae</strong>
                             </a>
                         </div>
                     </div>
-                    <TitlePage title="charlamos" />
                 </section>
+                <TitlePage title="charlamos" />
             </animated.div>
         </Layout>
     );

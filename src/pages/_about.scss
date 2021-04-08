@@ -61,20 +61,23 @@
 }
 @media all and (min-width: 1390px) {
     #about {
+        display: flex;
+        align-items: center;
+        padding: 2rem 6rem;
         .about-img {
-            width: 60%;
-            margin: auto;
+            width: 80%;
+            margin: 0;
         }
         .about-text {
-            margin-top: 5%;
+            margin: 0;
             .title {
-                font-size: 3vw;
+                font-size: 2vw;
             }
             p {
-                font-size: 1.5vw;
+                font-size: 1vw;
             }
             .subtitle {
-                font-size: 1.5vw;
+                font-size: 1vw;
             }
         }
     }
