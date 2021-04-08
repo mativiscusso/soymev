@@ -763,7 +763,7 @@ body {
 #portfolio .swiper-container {
   width: 370px;
   height: 440px;
-  padding-top: 70px;
+  padding-top: 55px;
 }
 
 @media all and (min-width: 424px) and (max-width: 767px) {
