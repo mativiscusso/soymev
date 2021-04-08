@@ -11,14 +11,14 @@ const Home = () => {
         <Layout>
             <animated.div style={animation}>
                 <section id="home">
-                    <div className="home-image">
+                    <div className="home-image swing-in-right-bck">
                         <img
                             className="img-fluid"
                             src={avatarHome}
                             alt="Avatar Mati Viscusso"
                         />
                     </div>
-                    <div className="home-text">
+                    <div className="home-text slide-in-left">
                         <h3>Hola, ¿que tal?</h3>
                         <h1>Soy Mati Viscusso</h1>
                         <h4>

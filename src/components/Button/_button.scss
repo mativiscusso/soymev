@@ -8,4 +8,12 @@
     font-size: 18px;
     line-height: 24px;
     background-color: transparent;
+    transition: all .15s ease-in;
+    &:hover {
+        background-color: $green;
+        color: $black;
+        font-weight: 800;
+        font-size: 19px;
+        cursor: pointer;
+    }
 }

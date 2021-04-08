@@ -16,7 +16,7 @@ import "swiper/components/scrollbar/scrollbar.scss";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Portfolio = () => {
-    const animation = useSpring({ opacity: 1, from: { opacity: 0 } });
+    const animation = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 300 });
 
     return (
         <Layout>

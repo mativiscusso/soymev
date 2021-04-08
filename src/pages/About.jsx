@@ -15,10 +15,10 @@ const About = () => {
         <Layout>
             <animated.div style={animation}>
                 <section id="about">
-                    <div className="about-img">
+                    <div className="about-img bounce-in-top">
                         <img src={matiImage} alt="imagen mati viscusso" />
                     </div>
-                    <div className="about-text">
+                    <div className="about-text slide-in-left">
                         <div className="resenia">
                             <h2 className="title">reseña</h2>
                             <p>

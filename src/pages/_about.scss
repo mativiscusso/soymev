@@ -2,7 +2,7 @@
     .about-img {
         margin-bottom: 25px;
     }
-    padding: 20px 15px 70px 15px;
+    padding: 5% 5% 10% 5%;
     font-family: $primaryFont;
     color: $white;
     .title {
@@ -20,6 +20,62 @@
         }
     }
     .about-img {
-        img {width: 100%;}
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    #about {
+        .title {
+            font-size: 5vw;
+        }
+        p {
+            font-size: 3vw;
+        }
+        .subtitle {
+            font-size: 3vw;
+        }
+    }
+}
+@media all and (min-width: 1024px) {
+    #about {
+        .about-img {
+            width: 60%;
+            margin: auto;
+        }
+        .about-text {
+            margin-top: 5%;
+            .title {
+                font-size: 4vw;
+            }
+            p {
+                font-size: 1.5vw;
+            }
+            .subtitle {
+                font-size: 1.5vw;
+            }
+        }
+    }
+}
+@media all and (min-width: 1390px) {
+    #about {
+        .about-img {
+            width: 60%;
+            margin: auto;
+        }
+        .about-text {
+            margin-top: 5%;
+            .title {
+                font-size: 3vw;
+            }
+            p {
+                font-size: 1.5vw;
+            }
+            .subtitle {
+                font-size: 1.5vw;
+            }
+        }
     }
 }
