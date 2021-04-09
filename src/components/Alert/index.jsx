@@ -1,17 +1,27 @@
-import React, {useState} from 'react';
+import React, { useEffect, useState } from "react";
 
-const Alert = ({text, color}) => {
-    const [ visibility, setVisibility] = useState('block')
+const Alert = ({ text, color, open }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    useEffect(() => {
+        setIsOpen(open)
+        if (open) {
+            setTimeout(() => setIsOpen(false), 3000);
+        }
+    }, [open]);
 
-    const handleClose = () => {
-        setVisibility('none')
-    }
     return (
-        <div style={{backgroundColor: color, display: visibility}} className="alert text-focus-in">
-            {text}
-            <span className="alert-close" onClick={handleClose}>X</span>
-        </div>
+        <>
+            {isOpen && (
+                <div
+                    style={{ backgroundColor: color }}
+                    className="alert text-focus-in"
+                >
+                    {text}
+                    <span className="alert-close">X</span>
+                </div>
+            )}
+        </>
     );
-}
+};
 
 export default Alert;

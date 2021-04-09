@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../Button";
 import emailjs from "emailjs-com";
 import SpinnerLoader from "../SpinnerLoader";
@@ -11,6 +11,13 @@ const FormContact = () => {
     const [nameError, setNameError] = useState(false);
     const [emailError, setEmailError] = useState(false);
     const [messageError, setMessageError] = useState(false);
+    const [alertOpen, setAlertOpen] = useState(false);
+
+    useEffect(() => {
+        if (alertOpen) {
+            setTimeout(() => setAlertOpen(false), 3000);
+        }
+    }, [alertOpen]);
 
     const validateName = (e) => {
         setFormData({ ...formData, [e.target.value]: e.target.value });
@@ -41,9 +48,10 @@ const FormContact = () => {
         setMessageResult({});
         if (!formData) {
             setMessageResult({
-                color: "#ff2222ab",
+                color: "#ff0000",
                 msg: "Debe completar todos los campos",
             });
+            setAlertOpen(true);
             return;
         } else {
             if (!nameError && !emailError && !messageError) {
@@ -59,23 +67,26 @@ const FormContact = () => {
                         (result) => {
                             setIsSending(false);
                             setMessageResult({
-                                color: "#47ff2291",
+                                color: "#47ff22",
                                 msg: "Mensaje enviado",
                             });
+                            setAlertOpen(true);
                         },
                         (error) => {
                             setIsSending(false);
                             setMessageResult({
-                                color: "#ff2222ab",
+                                color: "#ff0000",
                                 msg: "Ups! Hubo un inconveniente",
                             });
+                            setAlertOpen(true);
                         }
                     );
             } else {
                 setMessageResult({
-                    color: "#ff2222ab",
+                    color: "#ff0000",
                     msg: "Hay errores en el formulario",
                 });
+                setAlertOpen(true);
                 return;
             }
         }
@@ -111,7 +122,11 @@ const FormContact = () => {
                 <Button text="Enviar Mensaje" isSubmit={true} />
             )}
             {!isSending && (
-                <Alert text={messageResult.msg} color={messageResult.color} />
+                <Alert
+                    text={messageResult.msg}
+                    color={messageResult.color}
+                    open={alertOpen}
+                />
             )}
         </form>
     );

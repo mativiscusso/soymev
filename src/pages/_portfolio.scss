@@ -5,7 +5,10 @@
     .swiper-container {
         width: 370px;
         height: 440px;
-        padding: 2rem 4.5rem;
+        padding: 1.5rem 4.5rem;
+        .swiper-slide {
+            margin-right: 80px!important;
+        }
     }
 }
 

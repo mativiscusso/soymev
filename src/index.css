@@ -901,6 +901,7 @@ body {
   color: #FFF;
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
           box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  z-index: 99999;
 }
 
 .alert .alert-close {
@@ -1107,7 +1108,11 @@ body {
 #portfolio .swiper-container {
   width: 370px;
   height: 440px;
-  padding: 2rem 4.5rem;
+  padding: 1.5rem 4.5rem;
+}
+
+#portfolio .swiper-container .swiper-slide {
+  margin-right: 80px !important;
 }
 
 @media all and (min-width: 424px) and (max-width: 767px) {
