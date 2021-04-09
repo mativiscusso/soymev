@@ -41,7 +41,7 @@ const Portfolio = () => {
                             },
                             1390: {
                              width: 1520,
-                             slidesPerView: 5   
+                             slidesPerView: 6   
                             },
                         }}
                     >

@@ -15,7 +15,7 @@ const About = () => {
         <Layout>
             <animated.div style={animation}>
                 <section id="about">
-                    <div className="about-img bounce-in-top">
+                    <div className="about-img text-focus-in">
                         <img src={matiImage} alt="imagen mati viscusso" />
                     </div>
                     <div className="about-text slide-in-left">

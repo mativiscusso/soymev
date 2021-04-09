@@ -19,9 +19,9 @@ const Home = () => {
                         />
                     </div>
                     <div className="home-text slide-in-left">
-                        <h3>Hola, ¿que tal?</h3>
-                        <h1>Soy Mati Viscusso</h1>
-                        <h4>
+                        <h3 className="swing-in-right-bck">Hola, ¿que tal?</h3>
+                        <h1 className="text-focus-in text-pop-up-top">Soy Mati Viscusso</h1>
+                        <h4 className="swing-in-right-bck">
                             Desarrollador full stack & diseñador apasionado del
                             front-end.
                         </h4>

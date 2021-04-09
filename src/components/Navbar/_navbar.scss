@@ -4,6 +4,9 @@
     padding: 1rem;
     .navbar-links {
         display: none;
+        .navbar-links-active {
+            color: $green;
+        }
     }
 }
 @media all and (min-width: 1024px) {

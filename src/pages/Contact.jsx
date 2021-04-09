@@ -78,7 +78,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </section>
-                <TitlePage title="charlamos" />
+                <TitlePage title="contacto" />
             </animated.div>
         </Layout>
     );

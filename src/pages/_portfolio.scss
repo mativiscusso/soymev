@@ -5,15 +5,15 @@
     .swiper-container {
         width: 370px;
         height: 440px;
-        padding-top: 55px;
+        padding: 2rem 4.5rem;
     }
 }
-  
-@media all and (min-width: 424px) and (max-width: 767px) { 
+
+@media all and (min-width: 424px) and (max-width: 767px) {
     #portfolio {
         .swiper-container {
             width: 424px;
-          }
+        }
     }
 }
 
@@ -23,23 +23,33 @@
             padding-top: 20%;
             height: 640px;
             width: 768px;
-          }    
-          .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+            .swiper-slide {
+                margin-right: 40px!important;
+            }
+            
+        }
+        .swiper-pagination-fraction,
+        .swiper-pagination-custom,
+        .swiper-container-horizontal > .swiper-pagination-bullets {
             bottom: 75px;
-        }  
+        }
     }
-
 }
 @media all and (min-width: 1024px) {
     #portfolio {
         margin-bottom: 5%;
         .swiper-container {
             padding-top: 30px;
-            width: 1180px;
-          }   
-          .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+            width: 1330px;
+            .swiper-slide {
+                margin-right: 40px!important;
+            }
+        }
+        .swiper-pagination-fraction,
+        .swiper-pagination-custom,
+        .swiper-container-horizontal > .swiper-pagination-bullets {
             bottom: 35px;
-        } 
+        }
     }
 }
 @media all and (min-width: 1390px) {
@@ -47,10 +57,15 @@
         .swiper-container {
             padding-top: 8%;
             height: 640px;
-            width: 1499px;
-          } 
-          .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
-              bottom: 75px;
-          }   
+            width: 1840px;
+            .swiper-slide {
+                margin-right: 23px!important;
+            }
+        }
+        .swiper-pagination-fraction,
+        .swiper-pagination-custom,
+        .swiper-container-horizontal > .swiper-pagination-bullets {
+            bottom: 75px;
+        }
     }
 }

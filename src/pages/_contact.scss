@@ -51,6 +51,9 @@
             .item-info-contact {
                 a {
                     font-size: 14px;
+                    &:hover {
+                        color: $lightBlue;
+                    }
                 }
             }
         }
@@ -58,7 +61,7 @@
 }
 @media all and (min-width: 1390px) {
     #contact {
-        padding: 1rem 2rem 2rem 6rem;
+        padding: 1rem 2rem 2rem 14rem;
         form {
             width: 40%;
             .form-control {
