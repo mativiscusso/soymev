@@ -23,6 +23,16 @@ body {
   width: 100%;
 }
 
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.pr-3 {
+  padding-right: 2rem !important;
+}
+
 .bounce-in-top {
   -webkit-animation: bounce-in-top 0.7s 300ms both;
   animation: bounce-in-top 0.7s 300ms both;
@@ -1158,12 +1168,6 @@ body {
 
 #contact {
   padding: 1rem 2rem 5rem 2rem;
-}
-
-#contact .contact-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #contact .info-contact {
