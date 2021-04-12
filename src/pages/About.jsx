@@ -78,10 +78,9 @@ const About = () => {
                             </div>
                         </div>
                     </div>
+                    <TitlePage title="sobre mi" />
                 </section>
             </animated.div>
-
-            <TitlePage title="sobre mi" />
         </Layout>
     );
 };
