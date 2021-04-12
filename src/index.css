@@ -461,7 +461,7 @@ body {
   border-radius: 20px;
 }
 
-.card-portfolio-image {
+.card-portfolio .card-portfolio-image {
   height: 330px;
   border-radius: 20px;
   -webkit-filter: grayscale(1);
@@ -470,7 +470,7 @@ body {
           box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
-.card-portfolio-footer {
+.card-portfolio .card-portfolio-footer {
   position: absolute;
   width: 230px;
   height: 70px;
@@ -481,14 +481,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.card-portfolio-footer h5 {
+.card-portfolio .card-portfolio-footer h5 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 900;
   line-height: 15px;
 }
 
-.card-portfolio-footer a {
+.card-portfolio .card-portfolio-footer a {
   font-family: "Roboto Mono", monospace;
   font-style: normal;
   font-weight: 900;
@@ -496,6 +496,21 @@ body {
   line-height: 15px;
   color: #2A2530;
   text-decoration: none;
+}
+
+.card-portfolio .card-portfolio-footer .card-portfolio-footer-icon {
+  position: absolute;
+  right: 25px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.card-portfolio .card-portfolio-footer .card-portfolio-footer-icon:hover {
+  cursor: pointer;
+  -webkit-filter: invert(0);
+          filter: invert(0);
 }
 
 @media all and (min-width: 1024px) {
