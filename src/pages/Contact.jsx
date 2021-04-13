@@ -12,6 +12,7 @@ import { useSpring, animated } from "react-spring";
 
 const Contact = () => {
     const animation = useSpring({ opacity: 1, from: { opacity: 0 } });
+    const urlCV = `${process.env.REACT_APP_URL}/pdf/MatiasViscusso_CV.pdf`;
 
     return (
         <Layout>
@@ -69,7 +70,7 @@ const Contact = () => {
                         <div className="item-info-contact">
                             <img src={logoCV} alt="curriculum vitae" />
                             <a
-                                href="http://localhost:3000/pdf/MatiasViscusso_CV.pdf"
+                                href={urlCV}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
