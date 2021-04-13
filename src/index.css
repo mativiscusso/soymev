@@ -1,6 +1,11 @@
 @font-face {
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   src: local("../fonts/RobotoMono/RobotoMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: local("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
 }
 
 * {
@@ -11,7 +16,7 @@
 }
 
 body {
-  background-color: #2A2530;
+  background-color: #2a2530;
 }
 
 #layout-page {
@@ -261,7 +266,7 @@ body {
   left: 51%;
   right: 51%;
   bottom: 0;
-  background: #48FF22;
+  background: #48ff22;
   height: 3px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -433,11 +438,11 @@ body {
 }
 
 .btn-primary {
-  border: 2px solid #48FF22;
+  border: 2px solid #48ff22;
   width: 182px;
   height: 46px;
   border-radius: 15px;
-  color: #48FF22;
+  color: #48ff22;
   font-family: "Roboto Mono", monospace;
   font-size: 18px;
   line-height: 24px;
@@ -447,8 +452,8 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #48FF22;
-  color: #2A2530;
+  background-color: #48ff22;
+  color: #2a2530;
   font-weight: 800;
   font-size: 19px;
   cursor: pointer;
@@ -494,7 +499,7 @@ body {
   font-weight: 900;
   font-size: 12px;
   line-height: 15px;
-  color: #2A2530;
+  color: #2a2530;
   text-decoration: none;
 }
 
@@ -562,7 +567,7 @@ body {
   font-weight: 900;
   font-size: 15vw;
   line-height: 78px;
-  color: #2A2530;
+  color: #2a2530;
   -webkit-text-stroke-width: .5px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.63);
 }
@@ -596,7 +601,7 @@ body {
 }
 
 .navbar .navbar-links .navbar-links-active {
-  color: #48FF22;
+  color: #48ff22;
 }
 
 @media all and (min-width: 1024px) {
@@ -627,7 +632,7 @@ body {
     list-style: none;
   }
   .navbar .navbar-links ul li a {
-    color: #00E3FF;
+    color: #00e3ff;
     text-transform: uppercase;
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
@@ -651,7 +656,7 @@ body {
   /* Our sidebar item styling */
   text-decoration: none;
   margin-bottom: 25px;
-  color: #2A2530;
+  color: #2a2530;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
@@ -681,7 +686,7 @@ body {
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #FFF;
+  background: #fff;
 }
 
 /* Position and sizing of clickable cross button */
@@ -692,12 +697,12 @@ body {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #2A2530;
+  background: #2a2530;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #00E3FF;
+  background: #00e3ff;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
   border-radius: 0 0 0 3rem;
@@ -705,7 +710,7 @@ body {
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #FFF;
+  fill: #fff;
 }
 
 /* Wrapper for item list */
@@ -738,7 +743,7 @@ body {
 #form-contact .form-control label {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  color: #00E3FF;
+  color: #00e3ff;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -748,9 +753,9 @@ body {
   background-color: transparent;
   border: 0;
   border-radius: 0;
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #fff;
   font-size: 14px;
-  color: #FFF;
+  color: #fff;
   font-family: "Roboto Mono", monospace;
   padding: 5px 0;
   -webkit-transition: all 0.2s;
@@ -760,7 +765,7 @@ body {
 #form-contact .form-control input:focus,
 #form-contact .form-control textarea:focus {
   outline: -webkit-focus-ring-color auto 0px;
-  border-bottom: 2px solid #00E3FF;
+  border-bottom: 2px solid #00e3ff;
 }
 
 .sk-chase {
@@ -913,7 +918,7 @@ body {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
-  color: #FFF;
+  color: #fff;
   -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
           box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   z-index: 99999;
@@ -923,7 +928,7 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
-  color: #FFF;
+  color: #fff;
   font-weight: 800;
 }
 
@@ -950,13 +955,13 @@ body {
 }
 
 #home .home-text {
-  color: #FFF;
+  color: #fff;
   font-family: "Roboto Mono", monospace;
 }
 
 #home .home-text h1 {
   margin: 5px 0;
-  color: #00E3FF;
+  color: #00e3ff;
   font-family: "Montserrat", sans-serif;
   font-size: 8vw;
 }
@@ -1028,7 +1033,7 @@ body {
 #about {
   padding: 5% 5% 10% 5%;
   font-family: "Montserrat", sans-serif;
-  color: #FFF;
+  color: #fff;
 }
 
 #about .about-img {
@@ -1036,7 +1041,7 @@ body {
 }
 
 #about .title {
-  color: #00E3FF;
+  color: #00e3ff;
   text-transform: uppercase;
 }
 
@@ -1046,7 +1051,7 @@ body {
 
 #about .skills .subtitle {
   text-transform: uppercase;
-  color: #48FF22;
+  color: #48ff22;
 }
 
 #about .skills .brands {
@@ -1211,7 +1216,7 @@ body {
 #contact .info-contact .item-info-contact a {
   font-family: "Roboto Mono", monospace;
   font-size: 12px;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   margin-left: 10px;
 }
@@ -1258,7 +1263,7 @@ body {
     font-size: 14px;
   }
   #contact .info-contact .item-info-contact a:hover {
-    color: #00E3FF;
+    color: #00e3ff;
   }
 }
 

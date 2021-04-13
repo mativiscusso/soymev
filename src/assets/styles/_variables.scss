@@ -1,14 +1,18 @@
-@font-face{ 
-    font-family: 'Roboto Mono', monospace;
-    src: local('../fonts/RobotoMono/RobotoMono-Regular.ttf') format('truetype');
-};
+@font-face {
+    font-family: "Roboto Mono", monospace;
+    src: local("../fonts/RobotoMono/RobotoMono-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: local("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
 
-$primaryFont: 'Montserrat', sans-serif;
-$secondaryFont: 'Roboto Mono', monospace;
-$green: #48FF22;
-$lightBlue: #00E3FF;
-$black: #2A2530;
-$white: #FFF;
+$primaryFont: "Montserrat", sans-serif;
+$secondaryFont: "Roboto Mono", monospace;
+$green: #48ff22;
+$lightBlue: #00e3ff;
+$black: #2a2530;
+$white: #fff;
 
 * {
     padding: 0;
@@ -26,8 +30,8 @@ body {
     width: 100%;
 }
 .d-flex {
-    display: flex!important;
+    display: flex !important;
 }
 .pr-3 {
-    padding-right: 2rem!important;
+    padding-right: 2rem !important;
 }
