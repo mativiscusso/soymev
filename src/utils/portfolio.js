@@ -1,5 +1,12 @@
 const portolio = [
     {
+        name: "Punto Ian Cowork",
+        url: "https://grupolipari.com.ar",
+        image: "punto-ian.png",
+        technologies: "React",
+        repository: "https://github.com/mativiscusso/punto-ian",
+    },
+    {
         name: "Grupo Lipari S.A.",
         url: "https://grupolipari.com.ar",
         image: "grupo-lipari.png",

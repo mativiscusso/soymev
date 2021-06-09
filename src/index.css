@@ -478,7 +478,7 @@ body {
 .card-portfolio .card-portfolio-footer {
   position: absolute;
   width: 230px;
-  height: 70px;
+  height: 85px;
   bottom: 0px;
   background: #00e1ffd7;
   border-radius: 0px 20px 20px 20px;
@@ -503,13 +503,22 @@ body {
   text-decoration: none;
 }
 
+.card-portfolio .card-portfolio-footer a:hover {
+  font-style: italic;
+  font-size: 13px;
+}
+
+.card-portfolio .card-portfolio-footer span {
+  font-size: 10px;
+}
+
 .card-portfolio .card-portfolio-footer .card-portfolio-footer-icon {
   position: absolute;
   right: 25px;
   -webkit-filter: invert(1);
           filter: invert(1);
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .card-portfolio .card-portfolio-footer .card-portfolio-footer-icon:hover {

@@ -12,7 +12,7 @@
     .card-portfolio-footer {
         position: absolute;
         width: 230px;
-        height: 70px;
+        height: 85px;
         bottom: 0px;
         background: #00e1ffd7;
         border-radius: 0px 20px 20px 20px;
@@ -32,12 +32,19 @@
             line-height: 15px;
             color: $black;
             text-decoration: none;
+            &:hover {
+                font-style: italic;
+                font-size: 13px;
+            }
+        }
+        span {
+            font-size: 10px;
         }
         .card-portfolio-footer-icon {
             position: absolute;
             right: 25px;
             filter: invert(1);
-            transition: all .2s ;
+            transition: all 0.2s;
             &:hover {
                 cursor: pointer;
                 filter: invert(0);

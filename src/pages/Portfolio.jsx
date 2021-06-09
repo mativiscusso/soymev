@@ -16,7 +16,11 @@ import "swiper/components/scrollbar/scrollbar.scss";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Portfolio = () => {
-    const animation = useSpring({ opacity: 1, from: { opacity: 0 }, delay: 300 });
+    const animation = useSpring({
+        opacity: 1,
+        from: { opacity: 0 },
+        delay: 300,
+    });
 
     return (
         <Layout>
@@ -28,20 +32,20 @@ const Portfolio = () => {
                         spaceBetween={1}
                         breakpoints={{
                             375: {
-                             width: 320,
-                             slidesPerView: 1   
+                                width: 320,
+                                slidesPerView: 1,
                             },
                             768: {
-                             width: 768,
-                             slidesPerView: 3   
+                                width: 768,
+                                slidesPerView: 3,
                             },
                             1024: {
-                             width: 1180,
-                             slidesPerView: 5   
+                                width: 1180,
+                                slidesPerView: 5,
                             },
                             1390: {
-                             width: 1520,
-                             slidesPerView: 6   
+                                width: 1520,
+                                slidesPerView: 6,
                             },
                         }}
                     >
@@ -51,6 +55,8 @@ const Portfolio = () => {
                                     title={job.name}
                                     url={job.url}
                                     image={job.image}
+                                    technologies={job.technologies}
+                                    repository={job.repository}
                                 />
                             </SwiperSlide>
                         ))}

@@ -1,7 +1,7 @@
 import React from "react";
 import iconGithub from "../../assets/svg/github.png";
 
-const CardPortfolio = ({ title, url, image, repository }) => {
+const CardPortfolio = ({ title, url, image, repository, technologies }) => {
     const urlImage = `${process.env.REACT_APP_URL}/assets/img/${image}`;
     return (
         <>
@@ -12,6 +12,9 @@ const CardPortfolio = ({ title, url, image, repository }) => {
             />
             <div className="card-portfolio-footer">
                 <h5>{title}</h5>
+                <span>{technologies}</span>
+                <br />
+
                 <a href={url} target="_blank" rel="noopener noreferrer">
                     VISITAR SITIO ▶
                 </a>
