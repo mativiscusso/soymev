@@ -20,15 +20,16 @@ const Home = () => {
                     </div>
                     <div className="home-text slide-in-left">
                         <h3 className="swing-in-right-bck">Hola, ¿que tal?</h3>
-                        <h1 className="text-focus-in text-pop-up-top">Soy Mati Viscusso</h1>
+                        <h1 className="text-focus-in text-pop-up-top">
+                            Soy Mati Viscusso
+                        </h1>
                         <h4 className="swing-in-right-bck">
-                            Desarrollador full stack & diseñador apasionado del
-                            front-end.
+                            Desarrollador full stack
                         </h4>
-                    <br />
-                    <Link to="/contact" className="home-btn">
-                        <Button text="CHARLEMOS" />
-                    </Link>
+                        <br />
+                        <Link to="/contact" className="home-btn">
+                            <Button text="CHARLEMOS" />
+                        </Link>
                     </div>
                 </section>
             </animated.div>
