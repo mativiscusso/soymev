@@ -22,23 +22,16 @@ const About = () => {
                         <div className="resenia">
                             <h2 className="title">reseña</h2>
                             <p>
-                                Desarrollador Full Stack con tendencia hacia
-                                Front a la orden de hacer realidad tus ideas y
-                                deseos de facilitar los procesos y acciones.
-                                ¿Cómo? Sistematizando y digitalizándolo todo.
+                                Desarrollador Full Stack desde el año 2018 y
+                                actualmente, docente de la carrera Full Stack
+                                Node JS en Digital House S.A.
                             </p>
-                            <br />
+                            <p></p>
                             <p>
-                                Docente de la carrera Full Stack Node en el
-                                instituto Digital House quienes me brindan la
-                                posibilidad de desarrollarme dia a dia en este
-                                fantastico mundo de aprender-enseñar.
+                                Pro activo, con vocación a la docencia y
+                                capacidad de trabajo en equipo.
                             </p>
-                            <br />
-                            <p>
-                                Es el inicio de una nueva era, donde
-                                prevalecerán, quienes se unan a la tecnología.{" "}
-                            </p>
+                            <p>JavaScript Lover 💛</p>
                         </div>
                         <div className="skills">
                             <h2 className="title">skills</h2>
