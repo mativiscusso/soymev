@@ -1,7 +1,7 @@
 const portolio = [
     {
         name: "Punto Ian Cowork",
-        url: "https://grupolipari.com.ar",
+        url: "https://puntoian.com.ar",
         image: "punto-ian.png",
         technologies: "React",
         repository: "https://github.com/mativiscusso/punto-ian",
