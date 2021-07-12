@@ -1,8 +1,8 @@
 import React from "react";
 import { push as Menu } from "react-burger-menu";
 import { NavLink } from "react-router-dom";
-import logoLinkdin from "../../assets/svg/linkedin.png";
-import logoGithub from "../../assets/svg/github.png";
+import logoLinkdin from "assets/svg/linkedin.png";
+import logoGithub from "assets/svg/github.png";
 
 const index = (props) => {
     return (

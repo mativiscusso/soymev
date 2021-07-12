@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Button from "../Button";
+import Button from "components/Button";
 import emailjs from "emailjs-com";
-import SpinnerLoader from "../SpinnerLoader";
-import Alert from "../Alert";
+import SpinnerLoader from "components/SpinnerLoader";
+import Alert from "components/Alert";
 
 const FormContact = () => {
     const [isSending, setIsSending] = useState(false);

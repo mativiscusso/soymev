@@ -9,22 +9,23 @@
     }
     .home-text {
         color: $white;
-        font-family: $secondaryFont;
+        font-family: $primaryFont;
         h1 {
             margin: 5px 0;
-            color: $lightBlue;
-            font-family: $primaryFont;
+            color: $white;
             font-size: 8vw;
         }
         h3 {
-            font-size: 6vw;
+            font-size: 4vw;
+            font-weight: 400;
         }
         h4 {
             font-size: 5vw;
+            font-weight: 400;
         }
     }
 }
-@media all and (min-width: 424px) and (max-width: 767px) { 
+@media all and (min-width: 424px) and (max-width: 767px) {
     #home {
         .home-image {
             img {
@@ -57,7 +58,7 @@
                 font-size: 3.5vw;
             }
             h3 {
-                font-size: 2.5vw;
+                font-size: 1.5vw;
             }
             h4 {
                 font-size: 2vw;
@@ -65,7 +66,7 @@
             width: 50%;
         }
         .home-image {
-            width: 35%!important;
+            width: 35% !important;
         }
     }
 }

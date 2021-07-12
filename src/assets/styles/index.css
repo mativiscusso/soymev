@@ -15,8 +15,14 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #2a2530;
+  background-image: url("assets/img/background.svg");
+  background-size: cover;
 }
 
 #layout-page {
@@ -36,6 +42,39 @@ body {
 
 .pr-3 {
   padding-right: 2rem !important;
+}
+
+footer {
+  background-color: #2a2530;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  color: #00e3ff;
+}
+
+footer div {
+  width: 340px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+footer div a:hover {
+  color: #00e3ff;
+  cursor: pointer;
 }
 
 .bounce-in-top {
@@ -438,25 +477,33 @@ body {
 }
 
 .btn-primary {
-  border: 2px solid #48ff22;
-  width: 182px;
-  height: 46px;
-  border-radius: 15px;
-  color: #48ff22;
   font-family: "Roboto Mono", monospace;
-  font-size: 18px;
-  line-height: 24px;
-  background-color: transparent;
-  -webkit-transition: all .15s ease-in;
-  transition: all .15s ease-in;
+  font-size: 1.3vw;
+  font-weight: bold;
+  -webkit-transition: -webkit-box-shadow 0.15s ease, -webkit-transform 0.15s ease;
+  transition: -webkit-box-shadow 0.15s ease, -webkit-transform 0.15s ease;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+  transition: box-shadow 0.15s ease, transform 0.15s ease, -webkit-box-shadow 0.15s ease, -webkit-transform 0.15s ease;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #00e3ff 60%, #00b7ff 120%);
+  -webkit-box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px rgba(58, 65, 111, 0.5);
+          box-shadow: 0px 2px 4px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px rgba(58, 65, 111, 0.5);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  min-width: 200px;
+  height: 48px;
+  border-radius: 4px;
+  border-width: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: #2a2530;
 }
 
 .btn-primary:hover {
-  background-color: #48ff22;
-  color: #2a2530;
-  font-weight: 800;
-  font-size: 19px;
   cursor: pointer;
+  -webkit-box-shadow: 0px 4px 8px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px #3c4fe0;
+          box-shadow: 0px 4px 8px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px #3c4fe0;
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .card-portfolio {
@@ -568,30 +615,25 @@ body {
 }
 
 .title-page {
-  position: absolute;
-  bottom: -15px;
-  right: 0px;
+  position: relative;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 15vw;
-  line-height: 78px;
-  color: #2a2530;
-  -webkit-text-stroke-width: .5px;
+  font-size: 8vw;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.63);
 }
 
 @media all and (min-width: 1024px) {
   .title-page {
-    font-size: 11vw;
+    font-size: 4vw;
   }
 }
 
 @media all and (min-width: 1390px) {
   .title-page {
-    position: fixed;
-    bottom: 30px;
-    font-size: 11vw;
+    font-size: 3vw;
   }
 }
 
@@ -752,7 +794,7 @@ body {
 #form-contact .form-control label {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  color: #00e3ff;
+  color: #fff;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -919,10 +961,10 @@ body {
 .alert {
   width: 350px;
   position: fixed;
-  bottom: 0;
-  left: 0;
+  top: 0;
+  right: 0;
   padding: 10px;
-  border-radius: 0 1rem 0 0;
+  border-radius: 0 0 0 1rem;
   text-align: center;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
@@ -945,101 +987,8 @@ body {
   cursor: pointer;
 }
 
-#home {
-  padding: 2rem;
-  height: 530px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-#home .home-image {
-  text-align: center;
-}
-
-#home .home-text {
-  color: #fff;
-  font-family: "Roboto Mono", monospace;
-}
-
-#home .home-text h1 {
-  margin: 5px 0;
-  color: #00e3ff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 8vw;
-}
-
-#home .home-text h3 {
-  font-size: 6vw;
-}
-
-#home .home-text h4 {
-  font-size: 5vw;
-}
-
-@media all and (min-width: 424px) and (max-width: 767px) {
-  #home .home-image {
-    padding-top: 3rem;
-  }
-  #home .home-image img {
-    width: 350px !important;
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 1023px) {
-  #home {
-    padding-top: 50%;
-  }
-  #home .home-image {
-    padding: 3rem;
-  }
-  #home .home-image img {
-    width: 80% !important;
-  }
-}
-
-@media all and (min-width: 1024px) {
-  #home {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-right: 3rem;
-  }
-  #home .home-text {
-    padding-right: 5rem;
-    width: 50%;
-  }
-  #home .home-text h1 {
-    font-size: 3.5vw;
-  }
-  #home .home-text h3 {
-    font-size: 2.5vw;
-  }
-  #home .home-text h4 {
-    font-size: 2vw;
-  }
-  #home .home-image {
-    width: 35% !important;
-  }
-}
-
-@media all and (min-width: 1390px) {
-  #home {
-    padding-top: 15%;
-  }
-}
-
 #about {
+  margin: 4rem 0;
   padding: 5% 5% 10% 5%;
   font-family: "Montserrat", sans-serif;
   color: #fff;
@@ -1113,27 +1062,31 @@ body {
     padding: 2rem 6rem;
   }
   #about .about-img {
-    width: 80%;
+    width: 60%;
     margin: 0;
-    padding-bottom: 50px;
+    padding: 0 70px 0 0;
   }
   #about .about-text {
     margin: 0;
     padding-bottom: 50px;
   }
   #about .about-text .title {
-    font-size: 2vw;
+    font-size: 2.2vw;
   }
   #about .about-text p {
-    font-size: 1vw;
+    font-size: 1.2vw;
   }
   #about .about-text .subtitle {
-    font-size: 1vw;
+    font-size: 1.2vw;
   }
 }
 
+#portfolio {
+  margin: 5% 0;
+}
+
 #portfolio .title-page {
-  position: fixed;
+  padding-left: 4rem !important;
 }
 
 #portfolio .swiper-container {
@@ -1169,9 +1122,6 @@ body {
 }
 
 @media all and (min-width: 1024px) {
-  #portfolio {
-    margin-bottom: 5%;
-  }
   #portfolio .swiper-container {
     padding-top: 30px;
     width: 1330px;
@@ -1204,32 +1154,11 @@ body {
 
 #contact {
   padding: 1rem 2rem 5rem 2rem;
+  margin: 4rem 0;
 }
 
-#contact .info-contact {
+#contact form {
   padding-top: 2rem;
-}
-
-#contact .info-contact .info-contact-graphic {
-  display: none;
-}
-
-#contact .info-contact .item-info-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5px 0;
-}
-
-#contact .info-contact .item-info-contact a {
-  font-family: "Roboto Mono", monospace;
-  font-size: 12px;
-  color: #fff;
-  text-decoration: none;
-  margin-left: 10px;
 }
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
@@ -1243,38 +1172,24 @@ body {
 
 @media all and (min-width: 1024px) {
   #contact {
-    padding: 1rem 2rem 10rem 6rem;
+    padding: 1rem 2rem 10rem 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 100%;
   }
-  #contact form {
-    width: 45%;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-  #contact .info-contact {
+  #contact .title-page {
     padding: 0;
-    padding-left: 5%;
-    margin: auto;
   }
-  #contact .info-contact .info-contact-graphic {
-    width: 60%;
-    display: block;
-    margin-left: 5%;
-  }
-  #contact .info-contact .item-info-contact a {
-    font-size: 14px;
-  }
-  #contact .info-contact .item-info-contact a:hover {
-    color: #00e3ff;
+  #contact form {
+    width: 35%;
   }
 }
 
@@ -1283,17 +1198,105 @@ body {
     padding: 1rem 2rem 2rem 14rem;
   }
   #contact form {
-    width: 40%;
+    width: 35%;
   }
   #contact form .form-control {
     padding: 30px 0;
   }
-  #contact .info-contact .info-contact-graphic {
-    width: 100%;
-    margin-left: 5%;
+}
+
+#home {
+  padding: 2rem;
+  height: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#home .home-image {
+  text-align: center;
+}
+
+#home .home-text {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+#home .home-text h1 {
+  margin: 5px 0;
+  color: #fff;
+  font-size: 8vw;
+}
+
+#home .home-text h3 {
+  font-size: 4vw;
+  font-weight: 400;
+}
+
+#home .home-text h4 {
+  font-size: 5vw;
+  font-weight: 400;
+}
+
+@media all and (min-width: 424px) and (max-width: 767px) {
+  #home .home-image {
+    padding-top: 3rem;
   }
-  #contact .info-contact .item-info-contact a {
-    font-size: 20px;
+  #home .home-image img {
+    width: 350px !important;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+  #home {
+    padding-top: 50%;
+  }
+  #home .home-image {
+    padding: 3rem;
+  }
+  #home .home-image img {
+    width: 80% !important;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  #home {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 3rem;
+  }
+  #home .home-text {
+    padding-right: 5rem;
+    width: 50%;
+  }
+  #home .home-text h1 {
+    font-size: 3.5vw;
+  }
+  #home .home-text h3 {
+    font-size: 1.5vw;
+  }
+  #home .home-text h4 {
+    font-size: 2vw;
+  }
+  #home .home-image {
+    width: 35% !important;
+  }
+}
+
+@media all and (min-width: 1390px) {
+  #home {
+    padding-top: 15%;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,42 @@
+#contact {
+    padding: 1rem 2rem 5rem 2rem;
+    margin: 4rem 0;
+    form {
+        padding-top: 2rem;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1023px) {
+    #contact {
+        padding: 2rem 6rem 15rem 6rem;
+        .info-contact {
+            padding-top: 4rem;
+        }
+    }
+}
+@media all and (min-width: 1024px) {
+    #contact {
+        padding: 1rem 2rem 10rem 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        .title-page {
+            padding: 0;
+        }
+        form {
+            width: 35%;
+        }
+    }
+}
+@media all and (min-width: 1390px) {
+    #contact {
+        padding: 1rem 2rem 2rem 14rem;
+        form {
+            width: 35%;
+            .form-control {
+                padding: 30px 0;
+            }
+        }
+    }
+}

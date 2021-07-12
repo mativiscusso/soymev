@@ -1,9 +1,12 @@
 import React from "react";
-import Layout from "../layout/Layout";
-import Button from "../components/Button";
-import avatarHome from "../assets/svg/Header-Image.svg";
+import Layout from "layout/Layout";
+import Button from "components/Button";
+import avatarHome from "assets/img/mativiscusso.png";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
+import About from "components/About";
+import Portfolio from "components/Portfolio";
+import Contact from "components/Contact";
 
 const Home = () => {
     const animation = useSpring({ opacity: 1, from: { opacity: 0 } });
@@ -28,10 +31,13 @@ const Home = () => {
                         </h4>
                         <br />
                         <Link to="/contact" className="home-btn">
-                            <Button text="CHARLEMOS" />
+                            <Button text="Charlemos" />
                         </Link>
                     </div>
                 </section>
+                <About />
+                <Portfolio />
+                <Contact />
             </animated.div>
         </Layout>
     );

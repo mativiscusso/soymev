@@ -1,13 +1,15 @@
 #portfolio {
+    margin: 5% 0;
+
     .title-page {
-        position: fixed;
+        padding-left: 4rem !important;
     }
     .swiper-container {
         width: 370px;
         height: 440px;
         padding: 1.5rem 4.5rem;
         .swiper-slide {
-            margin-right: 80px!important;
+            margin-right: 80px !important;
         }
     }
 }
@@ -27,9 +29,8 @@
             height: 640px;
             width: 768px;
             .swiper-slide {
-                margin-right: 40px!important;
+                margin-right: 40px !important;
             }
-            
         }
         .swiper-pagination-fraction,
         .swiper-pagination-custom,
@@ -40,12 +41,11 @@
 }
 @media all and (min-width: 1024px) {
     #portfolio {
-        margin-bottom: 5%;
         .swiper-container {
             padding-top: 30px;
             width: 1330px;
             .swiper-slide {
-                margin-right: 40px!important;
+                margin-right: 40px !important;
             }
         }
         .swiper-pagination-fraction,
@@ -62,7 +62,7 @@
             height: 640px;
             width: 1840px;
             .swiper-slide {
-                margin-right: 23px!important;
+                margin-right: 23px !important;
             }
         }
         .swiper-pagination-fraction,

@@ -1,5 +1,5 @@
 import React from "react";
-import iconGithub from "../../assets/svg/github.png";
+import iconGithub from "assets/svg/github.png";
 
 const CardPortfolio = ({ title, url, image, repository, technologies }) => {
     const urlImage = `${process.env.REACT_APP_URL}/assets/img/${image}`;

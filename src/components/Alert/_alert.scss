@@ -1,17 +1,17 @@
 .alert {
     width: 350px;
     position: fixed;
-    bottom: 0;
-    left: 0;
+    top: 0;
+    right: 0;
     padding: 10px;
-    border-radius: 0 1rem 0 0;
+    border-radius: 0 0 0 1rem;
     text-align: center;
     text-transform: uppercase;
     font-family: $primaryFont;
     font-size: 12px;
     color: $white;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
-    z-index:99999;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    z-index: 99999;
     .alert-close {
         position: absolute;
         top: 10px;
