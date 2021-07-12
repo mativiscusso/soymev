@@ -1,7 +1,6 @@
 .btn-primary {
     font-family: $secondaryFont;
-    font-size: 1.3vw;
-    font-weight: bold;
+    font-size: 4vw;
     transition: box-shadow 0.15s ease, transform 0.15s ease;
     will-change: box-shadow, transform;
     background: radial-gradient(100% 100% at 100% 0%, #00e3ff 60%, #00b7ff 120%);
@@ -23,5 +22,11 @@
         -moz-transform: translateY(-2px);
         -ms-transform: translateY(-2px);
         transform: translateY(-2px);
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .btn-primary {
+        font-size: 1.3vw;
     }
 }

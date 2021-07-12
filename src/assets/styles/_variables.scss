@@ -40,30 +40,3 @@ body {
 .pr-3 {
     padding-right: 2rem !important;
 }
-
-footer {
-    background-color: $black;
-    color: $white;
-    text-align: center;
-    padding: 0.5rem 0;
-    font-family: $primaryFont;
-    font-size: 10px;
-    color: $lightBlue;
-
-    div {
-        a {
-            text-decoration: none;
-            color: $white;
-            font-size: 12px;
-            &:hover {
-                color: $lightBlue;
-                cursor: pointer;
-            }
-        }
-        width: 340px;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5rem 0;
-    }
-}

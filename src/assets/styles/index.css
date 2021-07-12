@@ -44,39 +44,6 @@ body {
   padding-right: 2rem !important;
 }
 
-footer {
-  background-color: #2a2530;
-  color: #fff;
-  text-align: center;
-  padding: 0.5rem 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  color: #00e3ff;
-}
-
-footer div {
-  width: 340px;
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0.5rem 0;
-}
-
-footer div a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 12px;
-}
-
-footer div a:hover {
-  color: #00e3ff;
-  cursor: pointer;
-}
-
 .bounce-in-top {
   -webkit-animation: bounce-in-top 0.7s 300ms both;
   animation: bounce-in-top 0.7s 300ms both;
@@ -478,8 +445,7 @@ footer div a:hover {
 
 .btn-primary {
   font-family: "Roboto Mono", monospace;
-  font-size: 1.3vw;
-  font-weight: bold;
+  font-size: 4vw;
   -webkit-transition: -webkit-box-shadow 0.15s ease, -webkit-transform 0.15s ease;
   transition: -webkit-box-shadow 0.15s ease, -webkit-transform 0.15s ease;
   transition: box-shadow 0.15s ease, transform 0.15s ease;
@@ -504,6 +470,12 @@ footer div a:hover {
           box-shadow: 0px 4px 8px rgba(45, 35, 66, 0.4), 0px 7px 13px -3px rgba(45, 35, 66, 0.3), inset 0px -3px 0px #3c4fe0;
   -webkit-transform: translateY(-2px);
   transform: translateY(-2px);
+}
+
+@media all and (min-width: 1024px) {
+  .btn-primary {
+    font-size: 1.3vw;
+  }
 }
 
 .card-portfolio {
@@ -1081,6 +1053,12 @@ footer div a:hover {
   }
 }
 
+@media all and (min-width: 1380px) {
+  #about {
+    margin: 18rem 0 4rem 0;
+  }
+}
+
 #portfolio {
   margin: 5% 0;
 }
@@ -1138,8 +1116,8 @@ footer div a:hover {
 
 @media all and (min-width: 1390px) {
   #portfolio .swiper-container {
-    padding-top: 8%;
-    height: 640px;
+    padding-top: 4%;
+    height: 550px;
     width: 1840px;
   }
   #portfolio .swiper-container .swiper-slide {
@@ -1195,13 +1173,57 @@ footer div a:hover {
 
 @media all and (min-width: 1390px) {
   #contact {
-    padding: 1rem 2rem 2rem 14rem;
+    padding: 0 2rem 2rem 5rem;
   }
   #contact form {
     width: 35%;
   }
   #contact form .form-control {
     padding: 30px 0;
+  }
+}
+
+footer {
+  background-color: #2a2530;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  color: #00e3ff;
+  padding: 1rem;
+}
+
+footer div {
+  width: 340px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+footer div a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+footer div a:hover {
+  color: #00e3ff;
+  cursor: pointer;
+}
+
+@media all and (min-width: 1280px) {
+  footer div {
+    width: 500px;
+    padding: 1rem;
+  }
+  footer div a {
+    font-size: 14px;
   }
 }
 
@@ -1297,6 +1319,9 @@ footer div a:hover {
 @media all and (min-width: 1390px) {
   #home {
     padding-top: 15%;
+  }
+  #home .home-image {
+    width: 30% !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
