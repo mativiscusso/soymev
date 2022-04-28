@@ -13,9 +13,6 @@ export default function Footer() {
                 >
                     📩 mativiscusso@gmail.com
                 </a>
-                <a href={urlCV} target="_blank" rel="noopener noreferrer">
-                    📝 Descargar <strong>Curriculum Vitae</strong>
-                </a>
             </div>
             Powered by <strong>soymev.com</strong>
         </footer>
